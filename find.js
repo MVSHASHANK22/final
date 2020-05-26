@@ -12,6 +12,7 @@ rating : {
 },
 quality : String});
 const gamecollection=mongoose.model("game",gameSchema);
+// using find function to read data.
 gamecollection.find(function(err,gam)
 {
     if(err)
@@ -22,6 +23,7 @@ gamecollection.find(function(err,gam)
         console.log(gam);
     }
 });
+//find by a particular data.
 gamecollection.find({name : "cricket"},function(err,val)
 {
     if(err)
