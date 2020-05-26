@@ -12,6 +12,7 @@ rating : {
 },
 quality : String});
 const gamecollection=mongoose.model("game",gameSchema);
+//update a particular document
 gamecollection.updateMany({name:"volleyball"},{$set:{rating:8,quality : "very good"}},function (err,data) {
     if(err){
         console.log(err);
@@ -21,8 +22,9 @@ gamecollection.updateMany({name:"volleyball"},{$set:{rating:8,quality : "very go
         console.log(data);
     }
 });
+//remove a document
 if (mongoose.Types.ObjectId.isValid('5ec7a330737f1149d08a8961')){
-    gamecollection.remove({ _id: '5ec7a330737f1149d08a8961'},function (err,data) {
+    gamecollection.deleteOne({ _id: '5ec7a330737f1149d08a8961'},function (err,data) {
         if(err){
             console.log(err);
         }
