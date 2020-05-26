@@ -52,6 +52,7 @@ g4.save(function(err,value)
         console.log(err);
     }
 });
+// create function
 gamecollection.create({
     name:"chess",
     rating:10,

@@ -6,11 +6,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "shahsank",
   "license": "ISC",
   "dependencies": {
     "mongoose": "^5.9.15"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MVSHASHANK22/final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MVSHASHANK22/final/issues"
+  },
+  "homepage": "https://github.com/MVSHASHANK22/final#readme",
   "description": ""
 }
